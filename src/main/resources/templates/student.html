@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+111111112222222222我们   倒三颠四
+   <table border="1">
+       <tr>
+           <td>id</td>
+           <td>姓名</td>
+           <td>性别</td>
+           <td>爱好</td>
+       </tr>
+       <tr th:each="stu : ${stuList}">
+           <td th:text="${stu.id}">id</td>
+           <td th:text="${stu.name}">姓名</td>
+           <td th:text="${stu.sex}">性别</td>
+           <td th:text="${stu.hobby}">爱好</td>
+       </tr>
+
+   </table>
+</body>
+</html>
