@@ -24,4 +24,8 @@ public class StudentService {
         t.setId(20);
         return studentMapper.selectOne(t);
     }
+
+    public Student findStuById(){
+        return studentMapper.findByid(20);
+    }
 }

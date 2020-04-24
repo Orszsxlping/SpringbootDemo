@@ -11,4 +11,6 @@ import java.util.List;
 public interface StudentMapper extends tk.mybatis.mapper.common.Mapper<Student> {
 
     public List<Student> selectStuAll();
+
+    public Student findByid(int id);
 }
